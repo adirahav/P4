@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- palette colors -->
+    <color name="palette1">#fff</color>
+    <color name="palette2">#eee</color>
+    <color name="palette3">#bdbdc1</color>
+    <color name="palette4">#828487</color>
+    <color name="palette5">#f6e0eb</color>
+    <color name="palette6">#eb4a7c</color>
+
+    <!-- theme -->
+    <color name="colorPrimary">@color/palette1</color>
+    <color name="colorPrimaryDark">@color/palette4</color>
+    <color name="colorAccent">@color/palette6</color>
+
+    <!-- elements colors -->
+    <color name="background">@color/palette2</color>
+    <color name="actionbarBackground">@color/palette2</color>
+    <color name="drawerBackground">@color/palette1</color>
+    <color name="cardBackground">@color/palette1</color>
+    <color name="footerBackground">#550000ff</color>
+    <color name="progressBarBackground">@color/palette2</color>
+    <color name="progressBarPotentialGained">@color/palette5</color>
+    <color name="progressBarPotentialMissing">@color/palette6</color>
+    <color name="ratingBarNormal">@color/palette3</color>
+    <color name="ratingBarActivated">@color/palette4</color>
+    <color name="text">@color/palette4</color>
+    <color name="label">@color/palette3</color>
+    <color name="score">@color/palette6</color>
+    <color name="divider">@color/palette2</color>
+    <color name="formHint">@color/palette4</color>
+    <color name="formText">@color/palette4</color>
+    <color name="formBackground">@color/palette3</color>
+    <color name="formError">@color/palette6</color>
+    <color name="bullet">@color/palette4</color>
+    <color name="buttonText">@color/palette1</color>
+    <color name="buttonBackground">@color/palette6</color>
+    <color name="avatarBorder">@color/palette1</color>
+</resources>

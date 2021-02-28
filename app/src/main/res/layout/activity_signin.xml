@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/title"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/padding"
+            android:text="@string/signin_login_header" />
+
+        <EditText
+            android:id="@+id/email"
+            android:hint="@string/signin_login_email_hint"
+            style="@style/formField" />
+
+        <TextView
+            android:id="@+id/emailError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/formError"
+            android:text="@string/signin_login_email_error"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/password"
+            android:hint="@string/signin_login_password_hint"
+            android:inputType="textPassword"
+            style="@style/formField" />
+
+        <TextView
+            android:id="@+id/passwordError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/formError"
+            android:text="@string/signin_login_password_error"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/submit"
+            android:text="@string/signin_login_submit"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            style="@style/button"
+            android:onClick="submitForm"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

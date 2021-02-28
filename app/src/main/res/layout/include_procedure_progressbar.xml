@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/progressbarLifePotentialContainer"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/progressbarLifePotentialBackgound"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@drawable/progressbar_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/progressbarLifePotentialComplete"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/progressbarLifePotentialGoal"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:translationX="-16dp"
+        android:background="@drawable/icon_goal"
+        app:layout_constraintStart_toEndOf="@+id/progressbarLifePotentialComplete"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/progressbarLifePotentialMissing"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:translationX="-10dp"
+        android:background="@drawable/progressbar_life_potential_missing"
+        app:layout_constraintStart_toEndOf="@+id/progressbarLifePotentialGained"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/progressbarLifePotentialGained"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:background="@drawable/progressbar_life_potential_gained"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/progressbarLifePotentialDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/score"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/padding_small"
+        style="@style/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressbarLifePotentialComplete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

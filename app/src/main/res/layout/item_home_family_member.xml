@@ -1,0 +1,44 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/familyMemberContainer">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/familyMemberAvatar"
+        style="@style/avatar"
+        app:civ_border_width="@dimen/avatar_border"
+        app:civ_border_color="@color/avatarBorder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/familyMemberName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/label"
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/padding_tiny"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/familyMemberAvatar" />
+
+    <TextView
+        android:id="@+id/familyMemberScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/score"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/padding_tiny"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/familyMemberName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

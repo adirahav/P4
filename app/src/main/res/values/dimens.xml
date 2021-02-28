@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">20dp</dimen>
+    <dimen name="padding_tiny">4dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_big">30dp</dimen>
+    <dimen name="divider">1dp</dimen>
+    <dimen name="avatar_size">50dp</dimen>
+    <dimen name="avatar_border">5dp</dimen>
+    <dimen name="avatar_topbar_size">37dp</dimen>
+    <dimen name="avatar_topbar_border">3dp</dimen>
+    <dimen name="avatar_small_size">35dp</dimen>
+    <dimen name="avatar_small_border">0dp</dimen>
+    <dimen name="icon_drawer_size">24dp</dimen>
+    <dimen name="footer_height">80dp</dimen>
+
+</resources>
